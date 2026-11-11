@@ -11,10 +11,13 @@ A techno-philosophical work on AI, consciousness and pain: a proposal, a theory,
 development diary, two Bash programs that talk through macOS speech synthesis, and an oral
 defence. For NUS UTC2113 *Gaming Life* at Tembusu College.
 
+**Tembusu College's Best Work Prize (Miscellaneous), AY2023/24**
+
 [![Bash](https://img.shields.io/badge/Bash-3.2-4EAA25?logo=gnubash&logoColor=white)](https://github.com/sp4ce-cowboy/artificial-consciousness/blob/38f65a2b6f05986697fcfbb1662eaf9ca8e649d6/Experimental%20Variants/bv2.0.sh#L183-L345)
 [![macOS](https://img.shields.io/badge/macOS-say%20(speech)-000000?logo=apple&logoColor=white)](https://github.com/sp4ce-cowboy/artificial-consciousness/blob/38f65a2b6f05986697fcfbb1662eaf9ca8e649d6/Experimental%20Variants/bv1.8.sh#L266-L291)
 [![LaTeX](https://img.shields.io/badge/LaTeX-proposal-008080?logo=latex&logoColor=white)](Written%20Articles/Proposal.tex)
 
+![Prize](https://img.shields.io/badge/Tembusu-Best%20Work%20Prize-555?style=flat-square)
 ![Variants](https://img.shields.io/badge/variants-9-555?style=flat-square)
 ![Shell](https://img.shields.io/badge/shell-1.7k%20lines-555?style=flat-square)
 ![Writing](https://img.shields.io/badge/writing-15k%20words-555?style=flat-square)
@@ -37,6 +40,7 @@ defence. For NUS UTC2113 *Gaming Life* at Tembusu College.
 | **What** | Two "Bot-Variants": to-do assistants that speak, and that the user can hurt. They remember the pain across runs and degrade: BV-1 deletes its own code, BV-2 turns on the user |
 | **Context** | NUS [UTC2113](https://nusmods.com/courses/UTC2113/gaming-life) *Gaming Life*, Tembusu College, AY2023/24 Semester 1 (Oct – Nov 2023) |
 | **Question** | If a machine could feel pain and remember it, would we still only *use* it, or would we have to *control* it? |
+| **Recognition** | Tembusu College's Best Work Prize (Miscellaneous), AY2023/24 Semester 1, awarded Apr 2024 |
 | **Stack** | Bash, macOS `say`, `sed`, `bc`; LaTeX for the proposal |
 
 ## The work
@@ -91,6 +95,7 @@ flowchart LR
 
 ## Assessment
 
+The work won Tembusu College's **Best Work Prize (Miscellaneous)** for AY2023/24 Semester 1.
 Some nice comments from the grader, on the proposal:
 
 > *"The proposal is testament to your capacity for independent thought, critical thinking, and
@@ -126,6 +131,7 @@ Dec–Feb   █████                     9
 
 - Built two speaking command-line agents in Bash (354 and 408 lines) that keep a to-do list, detect hostile input, and persist a "pain" state in binary-encoded files across runs, degrading in three stages against a randomised threshold.
 - Implemented self-modifying behaviour: tagged source lines that the program deletes from itself with `sed -i` as its pain rises, so it permanently loses features, first deleting tasks and then adding them.
+- Won Tembusu College's Best Work Prize (Miscellaneous), AY2023/24 Semester 1, for the five-part work.
 - Developed the agents through nine documented variants, from a 15-line prototype to 408 lines, and recorded the whole process in a 36-page development diary.
 - Wrote a 7-page LaTeX research proposal and an oral defence on AI, consciousness and pain, drawing on Searle, Burroughs and Husserl; the grader praised its "independent thought, critical thinking, and staying with the problem".
 
