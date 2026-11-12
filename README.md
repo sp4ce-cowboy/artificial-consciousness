@@ -124,7 +124,9 @@ flowchart LR
 
 ## Recognition
 
-[Tembusu College's Best Work Prize (Miscellaneous)](https://tembusu.nus.edu.sg/education/student-prizes/#:~:text=Winner-,Rubesh%20Suresh,-%3E%20echo%20%E2%80%9CI), AY2023/24.
+**[Tembusu College's Best Work Prize (Miscellaneous)](https://tembusu.nus.edu.sg/education/student-prizes/#:~:text=Winner-,Rubesh%20Suresh,-%3E%20echo%20%E2%80%9CI), AY2023/24.** The prize citation:
+
+> *A rigorous and unrelenting experimentation of artificial consciousness, the work stages the scene of man’s ontological anxieties over the creation and mastery of his tools. The startling and disconcerting insight advanced by the work contributes to urgent debates surrounding machinic epistemology and automated reason. The confrontation with a technical “being” that stakes a claim on pain and suffering offers moments of slippages from use, which William Burroughs identifies with the act of using tools, to control, which operates on the condition of the autonomy of the controlled. Painstakingly acknowledging the different layers of abstraction that make possible this work, complete with a caveat of the limitations of programmatic rules, the work boldly simulates two programmes with very different recourses to their encounter with pain. The work forces us to reckon with an image of a machinic entity into whose phenomenological relation we have barely begun to grasp.*
 
 ## Coding stats
 
