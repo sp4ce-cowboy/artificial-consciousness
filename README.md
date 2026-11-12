@@ -15,8 +15,7 @@ UTC2113 *Gaming Life*.
 **[Tembusu College's Best Work Prize (Miscellaneous), AY2023/24](https://tembusu.nus.edu.sg/education/student-prizes/#:~:text=Winner-,Rubesh%20Suresh,-%3E%20echo%20%E2%80%9CI)**
 
 [![Bash](https://img.shields.io/badge/Bash-3.2-4EAA25?logo=gnubash&logoColor=white)](https://github.com/sp4ce-cowboy/artificial-consciousness/blob/38f65a2b6f05986697fcfbb1662eaf9ca8e649d6/Experimental%20Variants/bv2.0.sh#L183-L345)
-[![Metaprogramming](https://img.shields.io/badge/runtime-self--modifying%20code-4EAA25?logo=gnubash&logoColor=white)](https://github.com/sp4ce-cowboy/artificial-consciousness/blob/38f65a2b6f05986697fcfbb1662eaf9ca8e649d6/Experimental%20Variants/bv1.8.sh#L239-L291)
-[![macOS](https://img.shields.io/badge/macOS-say%20(speech)-000000?logo=apple&logoColor=white)](https://github.com/sp4ce-cowboy/artificial-consciousness/blob/38f65a2b6f05986697fcfbb1662eaf9ca8e649d6/Experimental%20Variants/bv1.8.sh#L266-L291)
+[![macOS](https://img.shields.io/badge/macOS-000000?logo=apple&logoColor=white)](https://github.com/sp4ce-cowboy/artificial-consciousness/blob/38f65a2b6f05986697fcfbb1662eaf9ca8e649d6/Experimental%20Variants/bv1.8.sh#L266-L291)
 
 [![Prize](https://img.shields.io/badge/Tembusu-Best%20Work%20Prize-555?style=flat-square)](https://tembusu.nus.edu.sg/education/student-prizes/#:~:text=Winner-,Rubesh%20Suresh,-%3E%20echo%20%E2%80%9CI)
 ![Shell](https://img.shields.io/badge/shell-1.7k%20lines-555?style=flat-square)
