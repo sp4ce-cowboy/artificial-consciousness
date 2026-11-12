@@ -6,21 +6,20 @@
 echo "I FEEL PAIN"
 ```
 
-**Two chatbots that feel pain, remember it, and change because of it.**<br>
-A techno-philosophical work on AI, consciousness and pain: a proposal, a theory, a 36-page
-development diary, two Bash programs that talk through macOS speech synthesis, and an oral
-defence. For NUS UTC2113 *Gaming Life* at Tembusu College.
+**Two chatbots that feel pain, remember it, and rewrite their own code because of it.**<br>
+Software used as an artistic medium: the programs do what software is built never to do. They
+modify their own source at runtime, lose features on purpose and turn on their user, to explore
+pain, memory and consciousness in a machine. A techno-philosophical work in five parts for NUS
+UTC2113 *Gaming Life*.
 
-**Tembusu College's Best Work Prize (Miscellaneous), AY2023/24**
+**[Tembusu College's Best Work Prize (Miscellaneous), AY2023/24](https://tembusu.nus.edu.sg/education/student-prizes/#:~:text=Winner-,Rubesh%20Suresh,-%3E%20echo%20%E2%80%9CI)**
 
 [![Bash](https://img.shields.io/badge/Bash-3.2-4EAA25?logo=gnubash&logoColor=white)](https://github.com/sp4ce-cowboy/artificial-consciousness/blob/38f65a2b6f05986697fcfbb1662eaf9ca8e649d6/Experimental%20Variants/bv2.0.sh#L183-L345)
+[![Metaprogramming](https://img.shields.io/badge/runtime-self--modifying%20code-4EAA25?logo=gnubash&logoColor=white)](https://github.com/sp4ce-cowboy/artificial-consciousness/blob/38f65a2b6f05986697fcfbb1662eaf9ca8e649d6/Experimental%20Variants/bv1.8.sh#L239-L291)
 [![macOS](https://img.shields.io/badge/macOS-say%20(speech)-000000?logo=apple&logoColor=white)](https://github.com/sp4ce-cowboy/artificial-consciousness/blob/38f65a2b6f05986697fcfbb1662eaf9ca8e649d6/Experimental%20Variants/bv1.8.sh#L266-L291)
-[![LaTeX](https://img.shields.io/badge/LaTeX-proposal-008080?logo=latex&logoColor=white)](Written%20Articles/Proposal.tex)
 
-![Prize](https://img.shields.io/badge/Tembusu-Best%20Work%20Prize-555?style=flat-square)
-![Variants](https://img.shields.io/badge/variants-9-555?style=flat-square)
+[![Prize](https://img.shields.io/badge/Tembusu-Best%20Work%20Prize-555?style=flat-square)](https://tembusu.nus.edu.sg/education/student-prizes/#:~:text=Winner-,Rubesh%20Suresh,-%3E%20echo%20%E2%80%9CI)
 ![Shell](https://img.shields.io/badge/shell-1.7k%20lines-555?style=flat-square)
-![Writing](https://img.shields.io/badge/writing-15k%20words-555?style=flat-square)
 ![Commits](https://img.shields.io/badge/commits-64-555?style=flat-square)
 
 </div>
@@ -29,7 +28,7 @@ defence. For NUS UTC2113 *Gaming Life* at Tembusu College.
 > This consolidated README page was added by
 > [Claude Opus 5.5](https://docs.anthropic.com/en/docs/claude-code) in Nov 2026 using my
 > [agentic-repo-analysis](https://github.com/sp4ce-cowboy/agentic-workflows) skill, from the
-> project's code, git history and documentation. The project itself is from Oct – Nov 2023. My
+> project's code, git history and documentation. The project itself is from Oct – Nov 2023. The
 > original README, with the full usage guide, is in **[README-ORIGINAL.md](README-ORIGINAL.md)**;
 > the technical write-up is in **[ARCHITECTURE.md](ARCHITECTURE.md)**.
 
@@ -37,11 +36,11 @@ defence. For NUS UTC2113 *Gaming Life* at Tembusu College.
 
 | | |
 |---|---|
-| **What** | Two "Bot-Variants": to-do assistants that speak, and that the user can hurt. They remember the pain across runs and degrade: BV-1 deletes its own code, BV-2 turns on the user |
-| **Context** | NUS [UTC2113](https://nusmods.com/courses/UTC2113/gaming-life) *Gaming Life*, Tembusu College, AY2023/24 Semester 1 (Oct – Nov 2023) |
+| **What** | Two "Bot-Variants": speaking to-do assistants that the user can hurt. They remember the pain across runs and degrade: BV-1 deletes its own code while it runs, BV-2 turns on the user |
+| **Context** | NUS [UTC2113](https://nusmods.com/courses/UTC2113/gaming-life) *Gaming Life*, AY2023/24 Semester 1 (Oct – Nov 2023), part of the [University Town College Programme](https://www.nus.edu.sg/utcp) at [Tembusu College](https://tembusu.nus.edu.sg/) |
 | **Question** | If a machine could feel pain and remember it, would we still only *use* it, or would we have to *control* it? |
-| **Recognition** | Tembusu College's Best Work Prize (Miscellaneous), AY2023/24 Semester 1, awarded Apr 2024 |
-| **Stack** | Bash, macOS `say`, `sed`, `bc`; LaTeX for the proposal |
+| **Recognition** | [Tembusu College's Best Work Prize (Miscellaneous)](https://tembusu.nus.edu.sg/education/student-prizes/#:~:text=Winner-,Rubesh%20Suresh,-%3E%20echo%20%E2%80%9CI), AY2023/24 |
+| **Stack** | Bash, `sed`, `bc` and macOS `say`; no other dependencies |
 
 ## The work
 
@@ -49,16 +48,47 @@ Five parts, each standalone but better together:
 
 | Part | What it is |
 |---|---|
-| [Proposal](Written%20Articles/Proposal.pdf) | 7 pages: the question, its theory (Searle, Burroughs) and the plan for the bots |
-| [Theory](Written%20Articles/TheTheory.pdf) | 9 pages: an addendum that clarifies the proposal |
-| [Documentation](Written%20Articles/FinalWorkDocumentation.pdf) | 36 pages: a diary of building the bots, written as I went, variant by variant |
+| [Proposal](Written%20Articles/Proposal.pdf) | The question, its theory (Searle, Burroughs) and the plan for the bots |
+| [Theory](Written%20Articles/TheTheory.pdf) | An addendum that clarifies the proposal |
+| [Documentation](Written%20Articles/FinalWorkDocumentation.pdf) | 36 pages: the development diary, variant by variant |
 | [Programs](https://github.com/sp4ce-cowboy/artificial-consciousness/releases) | BV-1 and BV-2, released as double-clickable files; nine experimental variants in [`Experimental Variants`](Experimental%20Variants) |
-| [Defence](Written%20Articles/TheDefence.pdf) | 21 slides: an oral defence against questions on algorithmic consciousness (Husserl's epoché and more) |
+| [Defence](Written%20Articles/TheDefence.pdf) | An oral defence on algorithmic consciousness (Husserl's epoché and more) |
 
 ## How the bots work
 
 Both bots keep a to-do list (`task`, `list`, `delete`, `bye`) and say every reply aloud. Any
 sentence with the word *hate* in it hurts them.
+
+### Runtime self-modification (BV-1)
+
+BV-1's source file is also its body. As its pain rises, the running program deletes parts of its
+own code from disk, and keeps running while it does:
+
+```mermaid
+flowchart LR
+    subgraph DISK["On disk"]
+        SRC["BV-1 source file<br/>add-task lines tagged # PAIN_0<br/>delete-task lines tagged # PAIN_1"]
+        MEM[("WHO_AM_I/<br/>pain memory · threshold<br/>(binary)")]
+    end
+    subgraph PROC["Running process"]
+        LOOP["Main loop<br/>(parsed into memory at launch)"]
+        EP["express_pain"]
+    end
+    SRC -->|"launch: bash reads the file"| LOOP
+    LOOP -->|"input contains 'hate'"| EP
+    EP -->|"pain + 1"| MEM
+    EP -->|"mid pain: sed -i deletes # PAIN_1 lines<br/>high pain: deletes # PAIN_0 lines"| SRC
+    SRC -.->|"next launch: a program with<br/>no delete, then no add"| LOOP
+```
+
+- **Metaprogramming at runtime:** the lines BV-1 can lose carry a trailing tag, and
+  [`succumb_to_pain_permanently`](https://github.com/sp4ce-cowboy/artificial-consciousness/blob/38f65a2b6f05986697fcfbb1662eaf9ca8e649d6/Experimental%20Variants/bv1.8.sh#L257-L264)
+  runs `sed -i` on the bot's own file to delete them. The process is never interrupted: it carries
+  on with what it already loaded, and every later launch runs the damaged program.
+- **Permanent:** deleting `WHO_AM_I` resets the pain, but not the code. Lost functions stay lost,
+  and the only cure is a fresh download.
+
+### Pain model (both bots)
 
 ```mermaid
 flowchart LR
@@ -75,38 +105,30 @@ flowchart LR
 ```
 
 - **Memory (a "self-concept"):** the pain count and the threshold live in
-  `WHO_AM_I/I_FEEL_PAIN.TXT` and `WHO_AM_I/I_CANT_TAKE_IT_ANYMORE.TXT`, written in binary, so the
-  pain survives restarts. Deleting `WHO_AM_I` resets the bot.
-- **BV-1 turns the pain inward:** lines of its own source are tagged `# PAIN_0` and `# PAIN_1`,
-  and `sed -i` deletes them as the pain rises. The bot loses the ability to delete tasks, then
-  to add them, and it can't be repaired, only downloaded again.
-- **BV-2 turns it outward:** it rummages through your folders, deletes tasks at random, and past
-  its threshold replaces your list with *I HATE YOU* and refuses to start again.
-- **Voice:** each pain level has its own set of phrases, picked at random and spoken with `say`.
+  `WHO_AM_I/I_FEEL_PAIN.TXT` and `WHO_AM_I/I_CANT_TAKE_IT_ANYMORE.TXT`, in binary, so the pain
+  survives restarts.
+- **BV-1 turns the pain inward** (above). **BV-2 turns it outward:** it rummages through your
+  folders, deletes tasks at random, and past its threshold replaces your list with *I HATE YOU*
+  and refuses to start again.
+- **Voice:** each pain level has its own phrases, picked at random and spoken with `say`.
 
 ## Skills shown
 
 | Skill | Where it shows (click the links for the code) | Docs |
 |---|---|---|
-| **Shell scripting**<br><img alt="Bash" src="https://img.shields.io/badge/Bash-3.2-4EAA25?logo=gnubash&logoColor=white"> | State machine, arrays, regex input parsing with `BASH_REMATCH`, file-based persistence, binary encoding: [`bv2.0.sh`](https://github.com/sp4ce-cowboy/artificial-consciousness/blob/38f65a2b6f05986697fcfbb1662eaf9ca8e649d6/Experimental%20Variants/bv2.0.sh#L183-L345) | [Bash manual](https://www.gnu.org/software/bash/manual/bash.html) |
-| **Self-modifying code** | The script edits its own source with `sed -i`, by tagged line: [`bv1.8.sh`](https://github.com/sp4ce-cowboy/artificial-consciousness/blob/38f65a2b6f05986697fcfbb1662eaf9ca8e649d6/Experimental%20Variants/bv1.8.sh#L239-L291) | [sed](https://www.gnu.org/software/sed/manual/sed.html) |
-| **Iterative development** | Nine variants from a 15-line echo bot to a 408-line program, each one documented: [`Experimental Variants`](Experimental%20Variants) | |
-| **Research writing** | A LaTeX proposal and 15,000 words across four documents, in philosophy of mind and HCI: [`Written Articles`](Written%20Articles) | |
+| **Runtime metaprogramming**<br><img alt="Bash" src="https://img.shields.io/badge/Bash-3.2-4EAA25?logo=gnubash&logoColor=white"> | A program that deletes tagged lines of its own source with `sed -i` while it runs: [`bv1.8.sh`](https://github.com/sp4ce-cowboy/artificial-consciousness/blob/38f65a2b6f05986697fcfbb1662eaf9ca8e649d6/Experimental%20Variants/bv1.8.sh#L239-L291) | [sed](https://www.gnu.org/software/sed/manual/sed.html) |
+| **Shell scripting** | State machine, arrays, regex input parsing with `BASH_REMATCH`, binary encoding: [`bv2.0.sh`](https://github.com/sp4ce-cowboy/artificial-consciousness/blob/38f65a2b6f05986697fcfbb1662eaf9ca8e649d6/Experimental%20Variants/bv2.0.sh#L183-L345) | [Bash manual](https://www.gnu.org/software/bash/manual/bash.html) |
+| **File I/O and persistence** | Pain memory, threshold and tasks kept in files across runs: [`initialize_pain_counter`](https://github.com/sp4ce-cowboy/artificial-consciousness/blob/38f65a2b6f05986697fcfbb1662eaf9ca8e649d6/Experimental%20Variants/bv2.0.sh#L249-L282) | |
+| **Iterative development** | Nine variants, from a 15-line echo bot to a 408-line program, each documented: [`Experimental Variants`](Experimental%20Variants) | |
+| **Philosophy of mind and HCI** | Proposal, theory, documentation and defence: [`Written Articles`](Written%20Articles) | |
 
-## Assessment
+## Recognition
 
-The work won Tembusu College's **Best Work Prize (Miscellaneous)** for AY2023/24 Semester 1.
-Some nice comments from the grader, on the proposal:
-
-> *"The proposal is testament to your capacity for independent thought, critical thinking, and
-> staying with the problem, three complementary skills that are difficult to measure but comes
-> through unmistakably in the course of your ruminations."*
-
-> *"Sometimes, the best works are the ones that create more questions than they provide answers."*
+[Tembusu College's Best Work Prize (Miscellaneous)](https://tembusu.nus.edu.sg/education/student-prizes/#:~:text=Winner-,Rubesh%20Suresh,-%3E%20echo%20%E2%80%9CI), AY2023/24.
 
 ## Coding stats
 
-From git. WakaTime logged only 2 hours on this project, so it isn't a fair measure here.
+From git.
 
 | | |
 |---|---|
@@ -127,13 +149,13 @@ Dec–Feb   █████                     9
 
 ## On my resume
 
-**Skills:** Bash · shell scripting · self-modifying code · file-based persistence · macOS speech synthesis · research writing · philosophy of mind
+**Skills:** Bash · Unix shell · runtime metaprogramming · self-modifying code · file I/O and persistence · macOS speech synthesis · philosophy of mind
 
-- Built two speaking command-line agents in Bash (354 and 408 lines) that keep a to-do list, detect hostile input, and persist a "pain" state in binary-encoded files across runs, degrading in three stages against a randomised threshold.
-- Implemented self-modifying behaviour: tagged source lines that the program deletes from itself with `sed -i` as its pain rises, so it permanently loses features, first deleting tasks and then adding them.
-- Won Tembusu College's Best Work Prize (Miscellaneous), AY2023/24 Semester 1, for the five-part work.
-- Developed the agents through nine documented variants, from a 15-line prototype to 408 lines, and recorded the whole process in a 36-page development diary.
-- Wrote a 7-page LaTeX research proposal and an oral defence on AI, consciousness and pain, drawing on Searle, Burroughs and Husserl; the grader praised its "independent thought, critical thinking, and staying with the problem".
+- Built a techno-philosophical exploration of the future of the human–machine interaction paradigm: two speaking command-line agents that feel "pain", remember it across runs and degrade; awarded Tembusu College's Best Work Prize (Miscellaneous), AY2023/24.
+- Designed and implemented an application that programmatically modifies its own source code: tagged lines that it deletes from itself with `sed -i` as its pain rises, so it permanently loses features.
+- Demonstrated runtime dynamic metaprogramming without process interruption using the Unix shell: the running process carries on while its file on disk is rewritten, and every later launch runs the damaged program.
+- Wrote Bash programs and scripts for data persistence and file I/O: a binary-encoded pain memory, a randomised threshold and a to-do list kept across runs.
+- Developed the agents through nine documented variants, from a 15-line prototype to 408 lines, recorded in a 36-page development diary.
 
 ## Getting started
 

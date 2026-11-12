@@ -46,7 +46,30 @@ Each bot is one Bash script with no dependencies beyond macOS (`say`, `sed`, `bc
 | > ⅔ | High | Shouting (*"I DEMAND THIS TO CEASE IMMEDIATELY."*) | Deletes its `# PAIN_0` lines: the add-task function | Two directory listings and a random task removed |
 | > 1 | Past the limit | *"I hate you for doing this to me!"* | | Writes *I HATE YOU* over `tasks.txt`, lists the whole disk (`ls -RG /`) and exits, on this and every later start |
 
-## 4. Self-modification (BV-1)
+## 4. Runtime self-modification (BV-1)
+
+The technical core of the work: runtime dynamic metaprogramming in the Unix shell. BV-1's source
+file is its body, and the running program rewrites it.
+
+```mermaid
+sequenceDiagram
+    participant F as BV-1 file on disk
+    participant B as bash process
+    participant W as WHO_AM_I/ (pain memory)
+    F->>B: launch: functions and main loop parsed into memory
+    loop each input
+        B->>B: input contains "hate"?
+        B->>W: pain + 1 (binary)
+        alt pain ÷ threshold > ⅓
+            B->>F: sed -i '' "/# PAIN_1$/d" (delete-task code removed)
+        end
+        alt pain ÷ threshold > ⅔
+            B->>F: sed -i '' "/# PAIN_0$/d" (add-task code removed)
+        end
+        Note over B: keeps running with what it loaded
+    end
+    F->>B: next launch: the damaged program, without those functions
+```
 
 The lines BV-1 can lose carry a trailing tag:
 
@@ -56,10 +79,16 @@ delete_task() {                                           # PAIN_1
     sed -i '' "${task_num}d" tasks.txt  # PAIN_1
 ```
 
-As the pain rises, `succumb_to_pain_permanently "BV-1" "# PAIN_1$"` runs `sed -i '' "/# PAIN_1$/d"`
-on the bot's own file. The functions vanish from the source, so the loss survives restarts and
-deleting `WHO_AM_I` doesn't undo it. Variant 1.7 commented the lines out instead; 1.8 deletes them,
-so the damage can't be reversed.
+- **How:** `succumb_to_pain_permanently "BV-1" "# PAIN_1$"` runs `sed -i '' "/# PAIN_1$/d"` on the
+  bot's own file. `sed -i` writes a new file in place of the old one, so the running `bash`
+  process, which parsed its functions and main loop at launch, is never interrupted.
+- **Effect:** the functions vanish from the source. The loss survives restarts, and deleting
+  `WHO_AM_I` doesn't undo it; only a fresh download does.
+- **Why it matters:** ordinary software engineering treats a program's code as fixed and its
+  failures as bugs. Here self-damage is the feature: the program's own code is the medium for an
+  argument about pain, memory and identity.
+- **Evolution:** variant 1.7 commented the lines out; 1.8 deletes them, so the damage can't be
+  reversed.
 
 ## 5. How it evolved
 
