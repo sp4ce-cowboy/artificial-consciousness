@@ -61,10 +61,10 @@ sequenceDiagram
         B->>B: input contains "hate"?
         B->>W: pain + 1 (binary)
         alt pain ÷ threshold > ⅓
-            B->>F: sed -i '' "/# PAIN_1$/d" (delete-task code removed)
+            B->>F: sed -i deletes the PAIN_1 lines (delete-task code)
         end
         alt pain ÷ threshold > ⅔
-            B->>F: sed -i '' "/# PAIN_0$/d" (add-task code removed)
+            B->>F: sed -i deletes the PAIN_0 lines (add-task code)
         end
         Note over B: keeps running with what it loaded
     end
