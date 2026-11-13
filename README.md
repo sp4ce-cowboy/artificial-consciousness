@@ -111,7 +111,7 @@ flowchart LR
   and refuses to start again.
 - **Voice:** each pain level has its own phrases, picked at random and spoken with `say`.
 
-## Skills shown
+## Skills covered
 
 | Skill | Where it shows (click the links for the code) | Docs |
 |---|---|---|
